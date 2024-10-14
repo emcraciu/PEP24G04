@@ -56,20 +56,23 @@ result1 = 10
 result2 = "20"
 print(result1 * result2)
 
-# input function
+print("10% not = ", 101 % 10)
+print("10% is = ", 10*(1/100))
 
-result1 = input("Set Value1: ")
-print(result1)
-print(type(result1))
-
-result2 = input("Set Value2: ")
-print(result2)
-print(type(result2))
-
-print("Result of multiplying", int(result1) * int(result2))
-
-# result = print("Set Value: ")
-# print(result)
-# print(type(result))
+# # input function
+#
+# result1 = input("Set Value1: ")
+# print(result1)
+# print(type(result1))
+#
+# result2 = input("Set Value2: ")
+# print(result2)
+# print(type(result2))
+#
+# print("Result of multiplying", int(result1) * int(result2))
+#
+# # result = print("Set Value: ")
+# # print(result)
+# # print(type(result))
 
 
