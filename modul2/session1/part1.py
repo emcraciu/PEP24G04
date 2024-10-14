@@ -56,9 +56,6 @@ result1 = 10
 result2 = "20"
 print(result1 * result2)
 
-
-
-
 # input function
 
 result1 = input("Set Value1: ")
@@ -69,7 +66,7 @@ result2 = input("Set Value2: ")
 print(result2)
 print(type(result2))
 
-print("Result of multipling", int(result1) * int(result2))
+print("Result of multiplying", int(result1) * int(result2))
 
 # result = print("Set Value: ")
 # print(result)
