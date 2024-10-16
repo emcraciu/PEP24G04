@@ -16,28 +16,29 @@
 # print("*******".center(9," "))
 # print(("*" * 9).center(9," "))
 
-""""str1 = "Hellow world"
-str1[0]
-str1[1]"""
+# str1 = "Hellow world"
+# str1[0]
+# str1[1]
 
-'''word = input("Introduceti un cuvant: ")
-result = word == word[::-1]
-print(f"palindrom: {result}")'''
+# word = input("Introduceti un cuvant: ")
+# result = word == word[::-1]
+# print(f"palindrom: {result}")
 
 # ------------------------------------------------------------------------------------------------------------
-"""string1 = "Hello Python"
-string2 = "Ana are mere"
-string3 = "Pizza Party"
+# string1 = "Hello Python"
+# string2 = "Ana are mere"
+# string3 = "Pizza Party"
+#
+# formatted_string1 = string1.replace(" ", "_")
+# formatted_string2 = string2.replace(" ", "_")
+# formatted_string3 = string3.replace(" ", "_")
+#
+# print(formatted_string1)
+# print()
+# print(formatted_string2)
+# print()
+# print(formatted_string3)
 
-formatted_string1 = string1.replace(" ", "_")
-formatted_string2 = string2.replace(" ", "_")
-formatted_string3 = string3.replace(" ", "_")
-
-print(formatted_string1)
-print()
-print(formatted_string2)
-print()
-print(formatted_string3)"""
 # ------------------------------------------------------------------------------------------------------------
 
 # var1='Hello Python'
@@ -59,14 +60,14 @@ print(formatted_string3)"""
 
 # ------------------------------------------------------------------------------------------------------------
 
-"""var1 = "Hello Python"
-print(var1.split())
-print(type(var1.split()))
-
-result = var1.split()
-print(result[0])
-
-print("_".join(var1.split()))"""
+# var1 = "Hello Python"
+# print(var1.split())
+# print(type(var1.split()))
+#
+# result = var1.split()
+# print(result[0])
+#
+# print("_".join(var1.split()))
 
 # ------------------------------------------------------------------------------------------------------------
 
@@ -88,3 +89,4 @@ print("Locatia lui a este: ",hex(id(c)))
 print(f"Tipul variabilei este: {type(a).__name__}")
 print(f"Tipul variabilei este: {str(type(b)).split("'")[1]}")
 print(f"Tipul variabilei este: {type(c)}")
+print(f"Tipul variabilei este: {str(type(c)).split()[1][1:-2]}")
