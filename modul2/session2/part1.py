@@ -28,3 +28,9 @@ string1 = f"Hello World {var1} {var1} {var2}"
 print(string1)
 
 
+# string length
+var1 = "Hello World"
+print(len(var1))
+print(type(len(var1)))
+result = len(var1)
+print(f"len(var1)={len(var1)}, {var1.__len__()}, {result}")

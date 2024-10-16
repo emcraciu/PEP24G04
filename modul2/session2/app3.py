@@ -1,0 +1,5 @@
+var10 = input("Introduceti un sir: ")
+print("Lungimea sirului este: {}".format(len(var10)))
+print(f"Lungimea sirului este: {len(var10)}")
+print("Lungimea sirului este: " + str(len(var10)))
+print("Lungimea sirului este: ", len(var10))
