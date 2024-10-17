@@ -49,3 +49,5 @@ nr4 = int(input("Introduceti valoarea numarului 4: "))
 
 punct_c = nr3 ** nr4
 print(f"{nr1} la puterea {nr2} este: {punct_c}")
+
+#updated
