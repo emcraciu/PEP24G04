@@ -66,6 +66,6 @@ recreative = venit_net * 0.3
 economii =  venit_net * 0.2
 
 print(f"Din venit lunar de {venit_net} {ron} aveti nevoie de urmatoarele sume: ")
-print(f"{necesitati} {ron} pentru necesitati uzuale")
+print(float(f"{necesitati} {ron} pentru necesitati uzuale"))
 print(f"{recreative} {ron} pentru scopuri recreative")
 print(f"{economii} {ron} pentru economii")
