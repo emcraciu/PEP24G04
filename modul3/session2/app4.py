@@ -8,3 +8,5 @@ while counter < 3:
     else:
         print("Parola gresita. Mai incercati.")
         counter += 1
+
+["Masa", 5, "Scaun", 4.5, [5, 6, 7], 8]
