@@ -1,6 +1,6 @@
 # INSTRUCTOR
 
-blocks = int(input("Enter the number of blocks: "))
+"""blocks = int(input("Enter the number of blocks: "))
 
 current_blocks = 0
 height = 0
@@ -11,4 +11,4 @@ for i in range(1, 1000000):
         current_blocks += i
 
 
-print("The height of the pyramid:", height)
+print("The height of the pyramid:", height)"""

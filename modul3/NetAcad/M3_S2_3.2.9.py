@@ -6,9 +6,9 @@
         print("You've successfully left the loop.")
         break"""
 
-user = ""
+"""user = ""
 while user != "chupacabra":
     user = input("Enter a word: ")
     if user == "chupacabra":
         print("You've successfully left the loop.")
-        break
+        break"""
