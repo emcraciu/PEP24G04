@@ -4,6 +4,7 @@ shop3 = {"apples": 12, "plums": 11, "peach": 15}
 cart = {"apples": 3, "plums": 4, "peach": 5}
 shops = {"magazin1": shop1, "magazin2": shop2, "magazin3": shop3}
 price_per_shop = {}
+
 for product, quantity in cart.items():
     print(product, quantity)
     for shop_name, shop_data in shops.items():
