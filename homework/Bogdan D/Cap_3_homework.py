@@ -18,5 +18,4 @@ for caracter in user_input:
         nr_vocale += 1
 print(f"Nr de vocale din cuvant: {nr_vocale}")
 
-
 # --------------------------------------------------
