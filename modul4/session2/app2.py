@@ -23,8 +23,6 @@ meniu = {
 
 option = None
 
-
-# a:
 def get_user_numbers():
     numbers = []
     while True:
@@ -52,10 +50,9 @@ def show_menu():
 
 def execute(menu: dict, numbers: list):
     global option
-    f = menu[option]
-    if option == '4':
-        numbers = 0
-
+    f = menu[option]  # extract function from dict using user input and save in variable f
+    if option == '4':  # user selected Iesire
+        numbers = 0  # force exit code 0
     print(f'Rezultatul: {f(numbers)}')
 
 
