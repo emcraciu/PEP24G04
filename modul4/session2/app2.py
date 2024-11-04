@@ -1,25 +1,64 @@
 def suma(lista: list):
-    pass
+    return sum(lista)
 
 
 def medie(lista: list):
-    pass
+    return sum(lista) / len(lista)
 
 
 def putere(lista: list):
-    pass
+    result = []
+    for i in lista:
+        result.append(i ** 2)
+    return result
 
 
 meniu = {
     "1": medie,
     "2": suma,
-    "3": putere
+    "3": putere,
+    "4": quit
+
 }
+
+option = None
 
 
 # a:
 def get_user_numbers():
-    pass
+    numbers = []
+    while True:
+        try:
+            number = int(input("give number"))
+            numbers.append(number)
+        except ValueError as e:
+            if 'x' in str(e):
+                break
+            else:
+                print("bad number")
+    return numbers
 
 
-get_user_numbers()
+def show_menu():
+    print("""Meniu:
+1. Media numerelor
+2. Suma numerelor
+3. Puterea numerelor din lista de numere
+4. Iesire""")
+
+    global option
+    option = input("Introduceti optiunea dvs: ")
+
+
+def execute(menu: dict, numbers: list):
+    global option
+    f = menu[option]
+    if option == '4':
+        numbers = 0
+
+    print(f'Rezultatul: {f(numbers)}')
+
+
+n_list = get_user_numbers()
+show_menu()
+execute(meniu, n_list)
