@@ -10,7 +10,14 @@ Meniu:
 def add_stoc():
     products = input("Adauga produse (produs, pret, stoc): ")
     product, price, stock = products.split(',')
-    STOCK.update({product: {price: stock}})
+    price = int(price)
+    stock = int(stock)
+
+    if product in STOCK:
+        data = STOCK[product]
+        data.update({price: data.get(price, 0) + stock})
+    else:
+        STOCK.update({product: {price: stock}})
 
 
 def get_stoc():
