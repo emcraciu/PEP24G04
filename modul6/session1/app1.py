@@ -4,10 +4,14 @@ class Product:
         self.name, self.price, self.stock = input("Give (name, price, stock) for product:").split(',')
 
     def __repr__(self):
-        pass
+        return (f"{self.__class__.__name__}: ({self.name},{self.price},{self.stock})")
 
     def __str__(self):
-        pass
+        return (f"Nume: {self.name} \n"
+                f"Pret: {self.price} \n"
+                f"Stoc: {self.stock} \n"
+                f"{40 * '-'}")
+
 
 class Category:
 
@@ -20,6 +24,10 @@ class Category:
         product = Product()
         self.products.append(product)
 
+
 class Shop:
-    pass
+
+    def run(self):
+        while True:
+            # code here
 
