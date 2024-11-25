@@ -10,5 +10,5 @@ from modul6.session1.app1 import Shop
 
 shop = Shop()
 # shop._Shop__add_product()
-shop._add_product()
-# shop.run()
+# shop._add_product()
+shop.run()
