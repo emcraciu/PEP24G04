@@ -36,10 +36,33 @@ from math import cos, acos
 from math import degrees as deg
 
 
+from math import cos, acos, radians
+from math import degrees as deg
+from random import triangular
+
+
 class Triangle:
-    pass  # <your code here>
+    def __init__(self, A=1, B=1, C=1, AB=60, BC=60, CA=60):
+        self.A=A
+        self.B=B
+        self.C=C
+        self.AB=AB
+        self.BC=BC
+        self.CA=CA
+    def modify_angle(self,angle: str, degrees: int):
+        if angle == "AB":
+            self.AB += degrees
+            self.C = (self.A**2 + self.B**2 - 2*self.A*self.B*cos(radians(self.AB)))**(1/2)
+            self.BC = deg(acos((self.B ** 2 + self.C ** 2 - self.A ** 2) / (2 * self.B * self.C)))
+            self.CA = deg(acos((self.C ** 2 + self.A ** 2 - self.B ** 2) / (2 * self.C * self.A)))
+
+
 
 # 10P
 # Create an object from your class with default constructor values and modify angle AB by +30 degrees and side A by +1.5
 
-# <your code here>
+triangle = Triangle()
+triangle.modify_angle("AB", 30)
+print(triangle.AB)
+print(triangle.C)
+print(triangle.BC, triangle.CA)
