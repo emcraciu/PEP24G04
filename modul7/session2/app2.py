@@ -30,3 +30,6 @@ print(sum(masini, Masina('', 0, '', 0, 0.0)).get_pret() / len(masini))
 
 # pret_t = sum(m.get_pret() for m in masini)
 # print(pret_t / len(masini))
+
+nr_bmw = len(list(filter(lambda m: m.marca == "BMW", masini)))
+print(nr_bmw)
