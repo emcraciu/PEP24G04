@@ -9,8 +9,13 @@ file.write("Hello Python")
 file.flush()
 file.close()
 
-with open("file1.txt", 'wt') as file:
-    file.write("Hello Python")
+with open("file1.txt", 'wt') as file1:
+    file1.write("Hello Python")
+
+with open("file1.txt", 'rb') as file2:
+    result = file2.read()
+    print(type(result))
+    print(result)
 
 
 # datetime
